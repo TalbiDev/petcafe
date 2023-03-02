@@ -4,44 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Yoyo Detail: Virtual Pet Cafe</title>
 </head>
-<body>
-    
-  <header>
-    <nav></nav>
-    <h1>Virtual Pet Cafe</h1>
-    <figure>
+<body class="bg-light">
+  <header class="bg-secondary ps-4 pt-2">
+    <nav class="navbar">
+    <figure class="navbar-brand">
       <img
+       class="rounded-circle"
         src="./images/pets.jpg"
         alt="A dog and cat ..."
         height="100"
         width="150"
       />
-      <figcaption>figcaption descriptive...</figcaption>
+      <figcaption class="text-white">figcaption descriptive...</figcaption>
     </figure>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="pet-list.html">Meet your virtual Pets</a></li>
-      <li><a href="pet-create.html">Create my Pet</a></li>
-      <li><a href="#">View my pets</a></li>
+    <ul class="nav me-auto">
+      <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="pet-list.html">Meet your virtual Pets</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="pet-create.html">Create my Pet</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="#">View my pets</a></li>
     </ul>
-    <h1>Meet Yoyo</h1>
-    <figure>
-      <img src="./images/yoyosittingonthefence.jpg" alt="yoyo pet" height="200" width="300">
-      <figcaption>yoyo cat</figcaption>
-    </figure>
+  </nav>
   </header>
-<main>
+<main class="pt-4">
+  <div class="container">
     <section>
-        <h2>About Me</h2>
+        <h2 class="text-secondary">About Me</h2>
         <p>Pet type: Cat</p>
         <p>Breed: Tabby</p>
         <p>Age: 11</p>
         <p>Temperament: Gentle</p>
       </section>
       <section>
-        <h2>Fun Facts</h2>
+        <h2 class="text-secondary">Fun Facts</h2>
         <ul>
           <li>Yoyo loves to snuggle on your lap after a long day. He'll curl in a ball and nap.</li>
           <li>His favorite toy is anything containing catnip.</li>
@@ -49,7 +47,7 @@
         </ul>
       </section>
       <section>
-        <h2>My Story</h2>
+        <h2 class="text-secondary">My Story</h2>
         <p>I was adopted from a shelter and was so happy to find a home here at the cafe.</p>
         <p>My brother Vanny is also here, but we don't get along.</p>
         <p>I am exceptionally smart. If I want to leave the cafe and go to my home upstairs,
@@ -58,9 +56,12 @@
         <p>If I'm <em>lonely</em>, I meow loudly.
           When <span>I'm hungry</span>, I stand by my bowl.</p>
       </section>
+    </div>
 </main>
-<footer>
-    All content on this site &copy;Copyright - Virtual Pet Cafe, Inc
-  </footer>
+<footer class="border-top border-light mt-4 fw-light">
+  <div class="container-fluid">
+  All content on this site &copy;Copyright - Virtual Pet Cafe, Inc
+</div>
+</footer>
 </body>
 </html>

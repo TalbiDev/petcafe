@@ -4,30 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Create My pet</title>
   </head>
-  <body>
-    <header>
-      <nav></nav>
-      <h1>Virtual Pet Cafe</h1>
-      <figure>
+  <body class="bg-light">
+    <header class="bg-secondary ps-4 pt-2">
+      <nav class="navbar">
+      <figure class="navbar-brand">
         <img
+         class="rounded-circle"
           src="./images/pets.jpg"
           alt="A dog and cat ..."
           height="100"
           width="150"
         />
-        <figcaption>figcaption descriptive...</figcaption>
+        <figcaption class="text-white">figcaption descriptive...</figcaption>
       </figure>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pet-list.html">Meet your virtual Pets</a></li>
-        <li><a href="pet-create.html">Create my Pet</a></li>
-        <li><a href="#">View my pets</a></li>
+      <ul class="nav me-auto">
+        <li class="nav-item"><a class="nav-link text-light" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="pet-list.html">Meet your virtual Pets</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="pet-create.html">Create my Pet</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="#">View my pets</a></li>
       </ul>
+    </nav>
     </header>
-    <main>
-      <h1>Create a custom Virtual Pet</h1>
+    <main class="pt-4">
+      <div class="container">
+      <h1 class="text-secondary">Create a custom Virtual Pet</h1>
       <form action="/" method="post">
         <p>
           <label for="name">Pet's Name:</label>
@@ -73,10 +77,13 @@
           <button>save the pet</button>
         </p>
       </form>
+    </div>
     </main>
 
-    <footer>
+    <footer class="border-top border-light mt-4 fw-light">
+      <div class="container-fluid">
       All content on this site &copy;Copyright - Virtual Pet Cafe, Inc
+    </div>
     </footer>
   </body>
 </html>
